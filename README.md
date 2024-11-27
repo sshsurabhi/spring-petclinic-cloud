@@ -20,7 +20,7 @@ The initial PetClinic application served as a legacy microservices-based Java sy
 ## Implementation Details
 
 ### 1. Infrastructure as Code (IaC) with Terraform
-Using Terraform, we provisioned a resilient AWS infrastructure that includes:
+Using [Terraform](https://github.com/sshsurabhi/petclinic-iac-main-harsha), we provisioned a resilient AWS infrastructure that includes:
 
 - VPC Configuration: Designed with both public and private subnets to enhance security and isolation.
 - EKS Cluster Deployment: Shipped in private subnets to ensure optimal connectivity and security practices.
@@ -30,7 +30,7 @@ Using Terraform, we provisioned a resilient AWS infrastructure that includes:
 To facilitate team collaboration, Terraform backend storage is managed via an S3 bucket, with all IaC code housed in the terraform branch of the repository.
 
 ## 2. Continuous Integration (CI) Pipeline
-Our team developed a Jenkins CI pipeline that automates:
+Our team developed a [Jenkins](https://github.com/sshsurabhi/Petclinic-Helm-Chart-K8S) CI pipeline that automates:
 
 - Build & Test Processes: The application is built and tested within Docker containers to ensure consistency and reliability.
 - Image Management: Successfully pushes Docker images to private ECR repositories for secure storage.
